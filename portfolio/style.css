@@ -75,13 +75,12 @@ body {
   width: 100%;
   background: linear-gradient(
     135deg,
-    #f0f4f8 0%,
-    #e8edf3 30%,
-    #dce4ed 60%,
-    #e4eaf2 80%,
-    #edf1f7 100%
+    #e2e8f0 10%,
+    #e5eaf1 30%,
+    #e7ecf2 60%,
+    #ebeff5 80%,
+    #ebeff5 100%
   );
-
   .role-container {
     display: flex;
     flex-direction: column;
@@ -106,7 +105,7 @@ body {
 
   .role-item-footer-button {
     align-self: flex-start;
-    color: #99b599f1;
+    color: #99b5f1;
 
     border-radius: 4.5px;
     border-color: #2562ee;
@@ -123,7 +122,6 @@ body {
     justify-content: center;
 
     width: 50%;
-    border: solid pink;
   }
   .photo-container-image {
     border-radius: 250px;
@@ -133,3 +131,93 @@ body {
   }
 }
 /* ==============================Role Selector End============================== */
+/* ==============================About Selector start============================== */
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 60px 80px 60px 100px;
+  background-color: #fefefe;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 70%;
+}
+.about-header-text {
+  color: #3d4758;
+  font-weight: 700;
+  font-size: 50px;
+}
+.about-main-text {
+  width: 80%;
+  color: #b0b7c3;
+  font-size: 28px;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+.skills-header {
+  font-size: 32px;
+  font-weight: 700;
+  color: #687180;
+}
+.single-skill-container {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar-container {
+  height: 10px;
+  width: 100px;
+  background: linear-gradient(
+    135deg,
+    #f0f4f8 0%,
+    #e8edf3 30%,
+    #dce4ed 60%,
+    #e4eaf2 80%,
+    #edf1f7 100%
+  );
+  border-radius: 20px;
+}
+.progress-bar-content {
+  background-color: #6892ec;
+  border-radius: 20px;
+  height: 100%;
+}
+#html-progress {
+  width: 90%;
+}
+#css-progress {
+  width: 70%;
+}
+#java-progress {
+  width: 80%;
+}
+#javascript-progress {
+  width: 70%;
+}
+#react-progress {
+  width: 70%;
+}
+#git-progress {
+  width: 60%;
+}
+#mysql-progress {
+  width: 50%;
+}
+#maven-progress {
+  width: 30%;
+}
+#svn-progress {
+  width: 30%;
+}
+#ai-prompting-progress {
+  width: 70%;
+}
+/* ==============================About Selector End============================== */
