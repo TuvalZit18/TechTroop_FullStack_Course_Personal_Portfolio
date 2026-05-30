@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-width: 0px;
 }
 body {
   min-height: 100vh;
@@ -81,54 +82,53 @@ body {
     #ebeff5 80%,
     #ebeff5 100%
   );
-  .role-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+}
+.role-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 
-    width: 50%;
-    padding: 60px 80px 60px 100px;
-  }
+  width: 50%;
+  padding: 60px 80px 60px 100px;
+}
 
-  .role-item-header-text {
-    color: #414b5c;
-    font-weight: 700;
-    font-size: 56px;
-    align-self: flex-start;
-  }
-  .role-item-info-text {
-    width: 80%;
-    color: #a4acba;
-    font-size: 28px;
-  }
+.role-item-header-text {
+  color: #414b5c;
+  font-weight: 700;
+  font-size: 56px;
+  align-self: flex-start;
+}
+.role-item-info-text {
+  width: 80%;
+  color: #a4acba;
+  font-size: 28px;
+}
 
-  .role-item-footer-button {
-    align-self: flex-start;
-    color: #99b5f1;
+.role-item-footer-button {
+  align-self: flex-start;
+  color: #99b5f1;
 
-    border-radius: 4.5px;
-    border-color: #2562ee;
-    padding: 20px 40px;
-    background-color: #1154ef;
-    transition: opacity 0.3s ease;
-  }
-  .role-item-footer-button:hover {
-    opacity: 0.8;
-  }
-  .photo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border-radius: 10px;
+  padding: 20px 40px;
+  background-color: #1154ef;
+  transition: opacity 0.3s ease;
+}
+.role-item-footer-button:hover {
+  opacity: 0.8;
+}
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 50%;
-  }
-  .photo-container-image {
-    border-radius: 250px;
+  width: 50%;
+}
+.photo-container-image {
+  border-radius: 250px;
 
-    width: 250px;
-    object-fit: cover;
-  }
+  width: 250px;
+  object-fit: cover;
 }
 /* ==============================Role Selector End============================== */
 /* ==============================About Selector start============================== */
@@ -221,3 +221,81 @@ body {
   width: 70%;
 }
 /* ==============================About Selector End============================== */
+/* ==============================Project Selector Start============================== */
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 60px 80px 60px 100px;
+  gap: 60px;
+  background: linear-gradient(
+    135deg,
+    #e2e8f0 10%,
+    #e5eaf1 30%,
+    #e7ecf2 60%,
+    #ebeff5 80%,
+    #ebeff5 100%
+  );
+}
+.project-cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+}
+.projects-header-text {
+  width: 100%;
+  text-align: center;
+  color: #414b5c;
+  font-weight: 700;
+  font-size: 50px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  flex: 1;
+  background-color: white;
+  height: 600px;
+}
+.project-card-header {
+  height: 60%;
+  border-radius: 10px 10px 0px 0px;
+}
+.project-card-header-image {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.project-card-info-container {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  padding: 30px;
+  gap: 20px;
+}
+.project-card-info-title-text {
+  font-weight: 700;
+  color: #737c8a;
+  font-size: 24px;
+}
+.project-card-info-text {
+  color: #b2b9c5;
+  font-size: 18px;
+}
+.project-card-info-footer {
+  width: max-content;
+  justify-self: flex-end;
+  margin-top: auto;
+}
+.button-view-product {
+  background-color: #faa731;
+  padding: 10px;
+  color: #eecf9c;
+  border-radius: 4.5px;
+}
+.button-view-product:hover {
+  opacity: 0.8;
+}
+/* ==============================Project Selector End============================== */
