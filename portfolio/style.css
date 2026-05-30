@@ -11,7 +11,7 @@ body {
 /* ==============================Root Selector Start============================ */
 #root {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   margin: 0;
   padding-top: 0;
@@ -29,11 +29,8 @@ body {
   padding: 60px 80px 60px 100px;
   background-color: #fefefe;
 }
-.header-name-wrapper {
-  display: flex;
-}
 .header-title-text {
-  font-size: 56px;
+  font-size: 42px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
@@ -55,7 +52,7 @@ body {
   border-bottom: solid #6892ec;
 }
 .header-nav-link-text {
-  font-size: 38px;
+  font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 100%;
@@ -63,7 +60,7 @@ body {
   color: #aab3bf;
 }
 .header-nav-link-text-bold {
-  font-size: 38px;
+  font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
@@ -71,3 +68,68 @@ body {
   color: #a7b0bd;
 }
 /* ==============================Header Selector End============================== */
+/* ==============================Role Selector Start============================== */
+.role {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #f0f4f8 0%,
+    #e8edf3 30%,
+    #dce4ed 60%,
+    #e4eaf2 80%,
+    #edf1f7 100%
+  );
+
+  .role-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    width: 50%;
+    padding: 60px 80px 60px 100px;
+  }
+
+  .role-item-header-text {
+    color: #414b5c;
+    font-weight: 700;
+    font-size: 56px;
+    align-self: flex-start;
+  }
+  .role-item-info-text {
+    width: 80%;
+    color: #a4acba;
+    font-size: 28px;
+  }
+
+  .role-item-footer-button {
+    align-self: flex-start;
+    color: #99b599f1;
+
+    border-radius: 4.5px;
+    border-color: #2562ee;
+    padding: 20px 40px;
+    background-color: #1154ef;
+    transition: opacity 0.3s ease;
+  }
+  .role-item-footer-button:hover {
+    opacity: 0.8;
+  }
+  .photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    border: solid pink;
+  }
+  .photo-container-image {
+    border-radius: 250px;
+
+    width: 250px;
+    object-fit: cover;
+  }
+}
+/* ==============================Role Selector End============================== */
