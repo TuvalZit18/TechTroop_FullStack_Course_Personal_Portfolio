@@ -15,6 +15,46 @@
             <span class="header-title-text">Tuval Zitelbach</span>
           </div>
         </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+        </div>
+        <div class="header-mobile-nav-dropdown">
+          <div class="header-mobile-nav-item">
+            <a href="#" class="header-mobile-nav-link" onclick="toggleMenu()">
+              <span class="header-mobile-nav-link-text">Home</span>
+            </a>
+          </div>
+          <div class="header-mobile-nav-item">
+            <a
+              href="#about"
+              class="header-mobile-nav-link"
+              onclick="toggleMenu()"
+            >
+              <span class="header-mobile-nav-link-text-bold">About</span>
+            </a>
+          </div>
+          <div class="header-mobile-nav-item">
+            <a
+              href="#projects"
+              class="header-mobile-nav-link"
+              onclick="toggleMenu()"
+            >
+              <span class="header-mobile-nav-link-text-bold">Projects</span>
+            </a>
+          </div>
+          <div class="header-mobile-nav-item">
+            <a
+              href="#contact"
+              class="header-mobile-nav-link"
+              onclick="toggleMenu()"
+            >
+              <span class="header-mobile-nav-link-text">Contact</span>
+            </a>
+          </div>
+        </div>
+
         <div class="header-nav-container">
           <div class="header-nav-item">
             <a href="#" class="header-nav-link">
@@ -316,5 +356,25 @@
         >
       </footer>
     </div>
+    <script>
+      function toggleMenu() {
+        console.log(
+          document.getElementsByClassName("header-mobile-nav-dropdown")[0].style
+            .display,
+        );
+        if (
+          document.getElementsByClassName("header-mobile-nav-dropdown")[0].style
+            .display === "none"
+        ) {
+          document.getElementsByClassName(
+            "header-mobile-nav-dropdown",
+          )[0].style.display = "flex";
+        } else {
+          document.getElementsByClassName(
+            "header-mobile-nav-dropdown",
+          )[0].style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
