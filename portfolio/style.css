@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   border-width: 0px;
+  text-decoration: none;
 }
 body {
   min-height: 100vh;
@@ -286,7 +287,6 @@ body {
 }
 .project-card-info-footer {
   width: max-content;
-  justify-self: flex-end;
   margin-top: auto;
 }
 .button-view-product {
@@ -299,3 +299,126 @@ body {
   opacity: 0.8;
 }
 /* ==============================Project Selector End============================== */
+/* ==============================Contact Selector Start============================== */
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 60px 80px 60px 100px;
+  background-color: #fefefe;
+}
+.contact-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-header-text {
+  color: #3d4758;
+  font-weight: 700;
+  font-size: 50px;
+}
+.contact-main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+.single-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+input,
+textarea {
+  border: 2px solid #e8edf2;
+  outline: none;
+  resize: none;
+  height: 40px;
+  border-radius: 4.5px;
+  transition: border-color 0.3s ease;
+}
+#message {
+  height: 80px;
+}
+.contact-form-footer {
+  width: max-content;
+}
+.contact-form-footer-button {
+  border-radius: 4.5px;
+  padding: 10px 40px;
+  background-color: #1154ef;
+  transition: opacity 0.3s ease;
+
+  color: #a7bff1;
+  font-size: 18px;
+}
+.contact-form-footer-button:hover {
+  opacity: 0.8;
+}
+label {
+  font-size: 18px;
+  color: #7e8796;
+}
+#email-label {
+  font-weight: 700;
+  color: #878f9d;
+}
+input:hover,
+textarea:hover {
+  border-color: #1154ef;
+}
+.contact-information-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 20px;
+}
+
+.contact-information-header {
+  width: 100%;
+}
+.contact-information-header-text {
+  font-weight: 700;
+  color: #666f7e;
+  font-size: 32px;
+}
+.contact-information-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-information-main-text {
+  color: #b1b9c5;
+  font-size: 18px;
+}
+.contact-information-footer {
+  display: flex;
+}
+
+.contact-information-footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 64px;
+  gap: 20px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 99px;
+  transition: transform 0.3s ease-in-out;
+}
+#social-link-linkedin {
+  background-color: #1154ef;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+/* ==============================Contact Selector End============================== */
