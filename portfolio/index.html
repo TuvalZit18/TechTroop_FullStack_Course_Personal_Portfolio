@@ -358,21 +358,14 @@
     </div>
     <script>
       function toggleMenu() {
-        console.log(
-          document.getElementsByClassName("header-mobile-nav-dropdown")[0].style
-            .display,
-        );
-        if (
-          document.getElementsByClassName("header-mobile-nav-dropdown")[0].style
-            .display === "none"
-        ) {
-          document.getElementsByClassName(
-            "header-mobile-nav-dropdown",
-          )[0].style.display = "flex";
+        document.querySelector(".hamburger").classList.toggle("active");
+        const menu = document.getElementsByClassName(
+          "header-mobile-nav-dropdown",
+        )[0];
+        if (menu.style.display === "none") {
+          menu.style.display = "flex";
         } else {
-          document.getElementsByClassName(
-            "header-mobile-nav-dropdown",
-          )[0].style.display = "none";
+          menu.style.display = "none";
         }
       }
     </script>
