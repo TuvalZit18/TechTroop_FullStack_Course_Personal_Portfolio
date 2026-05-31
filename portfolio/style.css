@@ -6,9 +6,13 @@
   box-sizing: border-box;
   border-width: 0px;
   text-decoration: none;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
 }
 body {
   min-height: 100vh;
+  line-height: 1.6;
 }
 /* ==============================Root Selector Start============================ */
 #root {
@@ -34,7 +38,6 @@ body {
 }
 .header-title-text {
   font-size: 18px;
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
 
@@ -88,14 +91,12 @@ body {
 }
 .header-mobile-nav-link-text {
   font-size: 18px;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 100%;
   color: #aab3bf;
 }
 .header-mobile-nav-link-text-bold {
   font-size: 18px;
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
   color: #a7b0bd;
@@ -116,14 +117,12 @@ body {
 }
 .header-nav-link-text {
   font-size: 32px;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 100%;
   color: #aab3bf;
 }
 .header-nav-link-text-bold {
   font-size: 32px;
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
   color: #a7b0bd;
@@ -161,7 +160,6 @@ body {
 .role-item-info-text {
   width: 100%;
   color: #a4acba;
-  font-size: 14px;
   text-align: center;
 }
 .role-item-info-footer {
@@ -216,7 +214,6 @@ body {
 .about-main-text {
   width: 100%;
   color: #b0b7c3;
-  font-size: 15px;
   text-align: center;
 }
 .skills-container {
@@ -237,7 +234,6 @@ body {
   justify-content: space-between;
 }
 .single-skill-title-text {
-  font-size: 13px;
 }
 .progress-bar-container {
   height: 10px;
@@ -325,7 +321,7 @@ body {
   width: 100%;
   flex: unset;
   background-color: white;
-  height: auto;
+  height: 500px;
 }
 .project-card-header {
   height: 180px;
@@ -340,9 +336,10 @@ body {
 .project-card-info-container {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 40%;
   padding: 30px;
   gap: 20px;
+  flex: 1;
 }
 .project-card-info-title-text {
   font-weight: 700;
@@ -351,7 +348,6 @@ body {
 }
 .project-card-info-text {
   color: #b2b9c5;
-  font-size: 13px;
 }
 .project-card-info-footer {
   width: 100%;
@@ -466,7 +462,6 @@ textarea:hover {
 }
 .contact-information-main-text {
   color: #b1b9c5;
-  font-size: 14px;
   text-align: center;
 }
 .contact-information-footer {
@@ -510,7 +505,7 @@ textarea:hover {
 /* ==============================Footer Selector End============================== */
 
 /* ==============================Desktop Styles============================== */
-@media (min-width: 640px) {
+@media (min-width: 1760px) {
   /* ==============================Header============================== */
   #header {
     padding: 60px 80px 60px 100px;
@@ -536,7 +531,6 @@ textarea:hover {
   }
   .role-item-info-text {
     width: 80%;
-    font-size: 28px;
     text-align: left;
   }
   .role-item-info-footer {
@@ -565,7 +559,6 @@ textarea:hover {
   }
   .about-main-text {
     width: 80%;
-    font-size: 28px;
     text-align: left;
   }
   .skills-container {
@@ -576,10 +569,6 @@ textarea:hover {
     font-size: 32px;
     text-align: left;
   }
-  .single-skill-title-text {
-    font-size: 16px;
-  }
-
   /* ==============================Projects============================== */
   #projects {
     padding: 60px 80px 60px 100px;
@@ -594,7 +583,7 @@ textarea:hover {
   .project-card {
     flex: 1;
     width: auto;
-    height: 600px;
+    height: 800px;
   }
   .project-card-header {
     height: 60%;
@@ -605,9 +594,7 @@ textarea:hover {
   .project-card-info-title-text {
     font-size: 24px;
   }
-  .project-card-info-text {
-    font-size: 18px;
-  }
+
   .project-card-info-footer {
     width: max-content;
   }
@@ -652,7 +639,6 @@ textarea:hover {
     justify-content: flex-start;
   }
   .contact-information-main-text {
-    font-size: 18px;
     text-align: left;
   }
   .contact-information-footer {
@@ -665,5 +651,11 @@ textarea:hover {
   }
   .footer-text {
     font-size: 24px;
+  }
+}
+/*  */
+@media (min-width: 641px) {
+  .project-card {
+    height: 600px;
   }
 }
