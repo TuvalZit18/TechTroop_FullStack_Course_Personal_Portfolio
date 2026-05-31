@@ -20,7 +20,7 @@ body {
 }
 /* ==============================Root Selector End============================ */
 /* ==============================Header Selector Start============================== */
-.header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,7 @@ body {
 }
 /* ==============================Header Selector End============================== */
 /* ==============================Role Selector Start============================== */
-.role {
+#role {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -133,7 +133,7 @@ body {
 }
 /* ==============================Role Selector End============================== */
 /* ==============================About Selector start============================== */
-.about {
+#about {
   display: flex;
   justify-content: space-between;
   width: 100%;
