@@ -358,14 +358,14 @@
     </div>
     <script>
       function toggleMenu() {
-        document.querySelector(".hamburger").classList.toggle("active");
         const menu = document.getElementsByClassName(
           "header-mobile-nav-dropdown",
         )[0];
-        if (menu.style.display === "none") {
-          menu.style.display = "flex";
-        } else {
+        document.querySelector(".hamburger").classList.toggle("active");
+        if (menu.style.display === "flex") {
           menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
         }
       }
     </script>
