@@ -29,11 +29,11 @@ body {
   width: 100%;
   height: 44px;
 
-  padding: 60px 80px 60px 100px;
+  padding: 15px 20px 15px 25px;
   background-color: #fefefe;
 }
 .header-title-text {
-  font-size: 42px;
+  font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
@@ -41,13 +41,12 @@ body {
   color: #6892ec;
 }
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
   position: relative;
 }
-
 .hamburger-bar {
   width: 25px;
   height: 3px;
@@ -57,15 +56,12 @@ body {
     transform 0.3s ease,
     opacity 0.3s ease;
 }
-
 .hamburger.active .hamburger-bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-
 .hamburger.active .hamburger-bar:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.active .hamburger-bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -95,20 +91,17 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 100%;
-
   color: #aab3bf;
 }
-
 .header-mobile-nav-link-text-bold {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
-
   color: #a7b0bd;
 }
 .header-nav-container {
-  display: flex;
+  display: none;
   gap: 20px;
 }
 .header-nav-item {
@@ -126,7 +119,6 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 100%;
-
   color: #aab3bf;
 }
 .header-nav-link-text-bold {
@@ -134,7 +126,6 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 100%;
-
   color: #a7b0bd;
 }
 /* ==============================Header Selector End============================== */
@@ -158,26 +149,27 @@ body {
   justify-content: center;
   gap: 20px;
 
-  width: 50%;
-  padding: 60px 80px 60px 100px;
+  width: 100%;
+  padding: 20px;
 }
-
 .role-item-header-text {
   color: #414b5c;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 26px;
+  text-align: center;
 }
 .role-item-info-text {
-  width: 80%;
+  width: 100%;
   color: #a4acba;
-  font-size: 28px;
+  font-size: 14px;
+  text-align: center;
 }
 .role-item-info-footer {
   display: flex;
+  justify-content: center;
 }
 .role-item-footer-button {
   color: #99b5f1;
-
   border-radius: 10px;
   padding: 20px 40px;
   background-color: #1154ef;
@@ -190,13 +182,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 50%;
+  width: 100%;
+  padding: 20px;
 }
 .photo-container-image {
   border-radius: 250px;
-
-  width: 250px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
 }
 /* ==============================Role Selector End============================== */
@@ -205,41 +197,47 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
-  padding: 60px 80px 60px 100px;
+  padding: 20px;
+  gap: 40px;
   background-color: #fefefe;
 }
 .about-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  width: 70%;
+  width: 100%;
 }
 .about-header-text {
   color: #3d4758;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 28px;
+  text-align: center;
 }
 .about-main-text {
-  width: 80%;
+  width: 100%;
   color: #b0b7c3;
-  font-size: 28px;
+  font-size: 15px;
+  text-align: center;
 }
 .skills-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 30%;
+  width: 100%;
+  padding: 20px;
 }
 .skills-header {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   color: #687180;
+  text-align: center;
 }
 .single-skill-container {
   display: flex;
   justify-content: space-between;
+}
+.single-skill-title-text {
+  font-size: 13px;
 }
 .progress-bar-container {
   height: 10px;
@@ -295,8 +293,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 60px 80px 60px 100px;
-  gap: 60px;
+  padding: 20px;
+  gap: 40px;
   background: linear-gradient(
     135deg,
     #e2e8f0 10%,
@@ -310,7 +308,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 40px;
 }
 .projects-header-text {
@@ -318,18 +316,19 @@ body {
   text-align: center;
   color: #414b5c;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 28px;
 }
 .project-card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  flex: 1;
+  width: 100%;
+  flex: unset;
   background-color: white;
-  height: 600px;
+  height: auto;
 }
 .project-card-header {
-  height: 60%;
+  height: 180px;
   border-radius: 10px 10px 0px 0px;
 }
 .project-card-header-image {
@@ -341,21 +340,21 @@ body {
 .project-card-info-container {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: auto;
   padding: 30px;
   gap: 20px;
 }
 .project-card-info-title-text {
   font-weight: 700;
   color: #737c8a;
-  font-size: 24px;
+  font-size: 16px;
 }
 .project-card-info-text {
   color: #b2b9c5;
-  font-size: 18px;
+  font-size: 13px;
 }
 .project-card-info-footer {
-  width: max-content;
+  width: 100%;
   margin-top: auto;
 }
 .button-view-product {
@@ -363,6 +362,7 @@ body {
   padding: 10px;
   color: #eecf9c;
   border-radius: 4.5px;
+  width: 100%;
 }
 .button-view-product:hover {
   opacity: 0.8;
@@ -373,7 +373,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 60px 80px 60px 100px;
+  padding: 20px;
+  gap: 40px;
   background-color: #fefefe;
 }
 .contact-header {
@@ -384,22 +385,23 @@ body {
 .contact-header-text {
   color: #3d4758;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 28px;
 }
 .contact-main-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
 }
 .contact-form-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 80%;
+  width: 100%;
 }
 .single-input-container {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
 }
 input,
 textarea {
@@ -415,16 +417,16 @@ textarea {
 }
 .contact-form-footer {
   display: flex;
-  width: max-content;
+  width: 100%;
 }
 .contact-form-footer-button {
   border-radius: 4.5px;
   padding: 10px 40px;
   background-color: #1154ef;
   transition: opacity 0.3s ease;
-
   color: #a7bff1;
-  font-size: 18px;
+  font-size: 15px;
+  width: 100%;
 }
 .contact-form-footer-button:hover {
   opacity: 0.8;
@@ -444,36 +446,35 @@ textarea:hover {
 .contact-information-container {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
   gap: 20px;
 }
-
 .contact-information-header {
   width: 100%;
+  text-align: center;
 }
 .contact-information-header-text {
   font-weight: 700;
   color: #666f7e;
-  font-size: 32px;
+  font-size: 20px;
 }
 .contact-information-main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 .contact-information-main-text {
   color: #b1b9c5;
-  font-size: 18px;
+  font-size: 14px;
+  text-align: center;
 }
-.contact-information-footer {
-  display: flex;
-}
-
 .contact-information-footer {
   display: flex;
   flex-wrap: wrap;
   height: 64px;
   gap: 20px;
+  justify-content: center;
 }
 .social-link {
   display: flex;
@@ -487,7 +488,6 @@ textarea:hover {
 #social-link-linkedin {
   background-color: #1154ef;
 }
-
 .social-link:hover {
   transform: scale(1.2);
 }
@@ -501,175 +501,169 @@ textarea:hover {
   width: 100%;
   height: 44px;
 
-  width: 100%;
-  height: 44px;
-
-  padding: 60px 80px 60px 100px;
+  padding: 15px 20px 15px 25px;
 }
 .footer-text {
-  font-size: 24px;
+  font-size: 12px;
   color: #878f9d;
 }
 /* ==============================Footer Selector End============================== */
-@media (max-width: 640px) {
-  /* ==============================Header Selector Start============================== */
+
+/* ==============================Desktop Styles============================== */
+@media (min-width: 640px) {
+  /* ==============================Header============================== */
   #header {
-    padding: 15px 20px 15px 25px;
-    background-color: #fefefe;
+    padding: 60px 80px 60px 100px;
   }
   .header-title-text {
-    font-size: 18px;
+    font-size: 42px;
   }
   .hamburger {
-    display: flex;
-  }
-  .header-nav-container {
     display: none;
   }
-  /* ==============================Header Selector End============================== */
-  /* ==============================Role Selector Start============================== */
+  .header-nav-container {
+    display: flex;
+  }
+
+  /* ==============================Role============================== */
   .role-container {
-    padding: 20px;
-    width: 100%;
+    width: 50%;
+    padding: 60px 80px 60px 100px;
   }
   .role-item-header-text {
-    width: 100%;
-    font-size: 26px;
-    text-align: center;
+    font-size: 56px;
+    text-align: left;
   }
   .role-item-info-text {
-    width: 100%;
-    color: #a4acba;
-    font-size: 14px;
-    text-align: center;
+    width: 80%;
+    font-size: 28px;
+    text-align: left;
   }
   .role-item-info-footer {
-    justify-content: center;
-  }
-  .photo-container {
-    width: 100%;
-    padding: 20px;
-  }
-  .photo-container-image {
-    width: 180px;
-    height: 180px;
-  }
-  /* ==============================Role Selector End============================== */
-  /* ==============================About Selector Start============================== */
-  #about {
-    padding: 20px;
-    gap: 40px;
-  }
-  .about-container {
-    width: 100%;
-  }
-  .about-header-text {
-    font-size: 28px;
-    text-align: center;
-  }
-  .about-main-text {
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-  }
-  .skills-container {
-    width: 100%;
-    padding: 20px;
-  }
-  .skills-header {
-    font-size: 22px;
-    text-align: center;
-  }
-  .single-skill-title-text {
-    font-size: 13px;
-  }
-  /* ==============================About Selector End============================== */
-  /* ==============================Projects Selector Start============================== */
-  #projects {
-    padding: 20px;
-    gap: 40px;
-  }
-  .projects-header-text {
-    font-size: 28px;
-  }
-  .project-cards-container {
-    width: 100%;
     justify-content: flex-start;
   }
-  .project-card {
-    width: 100%;
-    height: auto;
-    flex: unset;
+  .photo-container {
+    width: 50%;
+    padding: 0;
   }
-  .project-card-header {
-    height: 180px;
-  }
-  .project-card-info-container {
+  .photo-container-image {
+    width: 250px;
     height: auto;
   }
-  .project-card-info-title-text {
+
+  /* ==============================About============================== */
+  #about {
+    padding: 60px 80px 60px 100px;
+    gap: 0;
+  }
+  .about-container {
+    width: 70%;
+  }
+  .about-header-text {
+    font-size: 50px;
+    text-align: left;
+  }
+  .about-main-text {
+    width: 80%;
+    font-size: 28px;
+    text-align: left;
+  }
+  .skills-container {
+    width: 30%;
+    padding: 0;
+  }
+  .skills-header {
+    font-size: 32px;
+    text-align: left;
+  }
+  .single-skill-title-text {
     font-size: 16px;
   }
+
+  /* ==============================Projects============================== */
+  #projects {
+    padding: 60px 80px 60px 100px;
+    gap: 60px;
+  }
+  .projects-header-text {
+    font-size: 50px;
+  }
+  .project-cards-container {
+    justify-content: space-between;
+  }
+  .project-card {
+    flex: 1;
+    width: auto;
+    height: 600px;
+  }
+  .project-card-header {
+    height: 60%;
+  }
+  .project-card-info-container {
+    height: 40%;
+  }
+  .project-card-info-title-text {
+    font-size: 24px;
+  }
   .project-card-info-text {
-    font-size: 13px;
+    font-size: 18px;
   }
   .project-card-info-footer {
-    width: 100%;
+    width: max-content;
   }
   .button-view-product {
-    width: 100%;
+    width: auto;
   }
-  /* ==============================Projects Selector End============================== */
-  /* ==============================Contact Selector Start============================== */
+
+  /* ==============================Contact============================== */
   #contact {
-    padding: 20px;
-    gap: 40px;
+    padding: 60px 80px 60px 100px;
+    gap: 0;
   }
   .contact-header-text {
-    font-size: 28px;
+    font-size: 50px;
   }
   .contact-main-container {
-    gap: 40px;
+    gap: 0;
   }
   .contact-form-container {
-    width: 100%;
+    width: 80%;
   }
   .single-input-container {
-    width: 100%;
+    width: 95%;
   }
   .contact-form-footer {
-    width: 100%;
+    width: max-content;
   }
   .contact-form-footer-button {
-    font-size: 15px;
-    width: 100%;
+    font-size: 18px;
+    width: auto;
   }
   .contact-information-container {
-    width: 100%;
+    width: 20%;
   }
   .contact-information-header {
-    text-align: center;
+    text-align: left;
   }
   .contact-information-header-text {
-    font-size: 20px;
+    font-size: 32px;
   }
   .contact-information-main {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .contact-information-main-text {
-    font-size: 14px;
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
   }
   .contact-information-footer {
-    justify-content: center;
+    justify-content: flex-start;
   }
-  /* ==============================Contact Selector End============================== */
-  /* ==============================Footer Selector Start============================== */
+
+  /* ==============================Footer============================== */
   #footer {
-    padding: 15px 20px 15px 25px;
+    padding: 60px 80px 60px 100px;
   }
   .footer-text {
-    font-size: 12px;
+    font-size: 24px;
   }
-  /* ==============================Footer Selector End============================== */
 }
